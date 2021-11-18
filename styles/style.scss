@@ -1,0 +1,29 @@
+@import './variables';
+@import './mixins';
+@import './responsive';
+
+@import './navBar';
+@import './section1';
+
+@font-face {
+  font-family: 
+  'oggg regular';
+  src: url('/fonts/OGG\ ROMAN.OTF') format('opentype');
+}
+
+@font-face {
+  font-family: 'ogg italic';
+  src: url('/fonts/OGG\ ITALIC.OTF');
+}
+
+body {
+    background-color: #efe8d7;
+    margin: 0px 6rem;
+  }
+
+  @include mobile {
+    body {
+        margin: 0px 1.5rem;
+      }
+
+  } 

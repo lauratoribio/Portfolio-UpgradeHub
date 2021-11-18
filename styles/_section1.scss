@@ -1,0 +1,132 @@
+.section1 {
+  display: flex;
+  border-bottom: solid 1px;
+  border-color: $secondaryColor2;
+  padding-bottom: 30px;
+}
+
+.column1 {
+  width: 50%;
+  height: 500px;
+  background-image: url("./images/degradado.png");
+  background-repeat: no-repeat;
+  background-position: center-left;
+  background-size: cover;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    width: auto;
+    height: 100%;
+  }
+}
+
+.column2 {
+  width: 50%;
+  margin-top: 1rem;
+  .column2Item1 {
+    @include mainTitles();
+    text-transform: uppercase;
+    span {
+      font-weight: bold;
+    }
+  }
+  .column2Item2 {
+    @include mainTitles();
+    margin-left: 173px;
+    margin-top: -35px;
+    color: $primaryColor1;
+  }
+  .column2Item3 {
+    width: 20.7rem;
+    margin-left: 175px;
+    p {
+      @include paragrapghs();
+    }
+  }
+  .column2Item4 {
+    img {
+      height: 100px;
+      position: absolute;
+      margin-top: -10rem;
+      margin-left: -4rem;
+    }
+  }
+}
+
+/**********Responsive Mobile 420px***********/
+
+@include mobile {
+  .section1 {
+    flex-direction: column-reverse;
+    .column1 {
+      width: 100%;
+      background-image: none;
+      height: auto;
+      img {
+        width: 95%;
+        height: auto;
+      }
+    }
+    .column2 {
+      width: 100%;
+      background-image: url("./images/degradado.png");
+      margin-top: 0px;
+      .column2Item1 {
+        font-size: $mobile-mainTitles-fontSize;
+      }
+
+      .column2Item2 {
+        font-size: $mobile-mainTitles-fontSize;
+        margin-left: 85px;
+        margin-top: -18px;
+      }
+      .column2Item3 {
+        width: 15rem;
+        margin-left: 85px;
+        p {
+          font-size: $mobile-paragrapghs-fontSize;
+        }
+      }
+    }
+  }
+}
+
+/**********Responsive Small laptop 1200-1390px***********/
+
+@include smallLaptop {
+  .column1 {
+    height: 400px;
+  }
+
+  .column2 {
+    .column2Item1 {
+      font-size: 2rem;
+    }
+
+    .column2Item2 {
+      font-size: 2rem;
+      margin-top: -20px;
+      margin-left: 115px;
+    }
+
+    .column2Item3 {
+      width: 19rem;
+      margin-left: 117px;
+      p {
+        font-size: $smallLaptop-paragrapghs-fontSize;
+      }
+    }
+
+    .column2Item4 {
+      img {
+        height: 100px;
+        margin-top: -9rem;
+        margin-left: -3rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+@mixin mainTitles() {
+  font-family: $primaryFont;
+  font-weight: 900;
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+@mixin paragrapghs() {
+  font-family: $primaryFont;
+  font-weight: regular;
+  font-size: 1.1rem;
+}
+
+@mixin languageSwitchs() {
+    @include paragrapghs();
+    padding: 0rem 1rem;
+    border: solid 1px $primaryColor1;
+    border-radius: 50%;
+}
