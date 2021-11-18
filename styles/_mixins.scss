@@ -1,19 +1,28 @@
 @mixin mainTitles() {
   font-family: $primaryFont;
   font-weight: 900;
-  font-size: 3rem;
+  font-size: 3.5rem;
   text-transform: uppercase;
+}
+
+@mixin mainTitles2() {
+  font-family: $secondaryFont;
+  font-weight: 100;
+  font-size: 4.5rem;
+
 }
 
 @mixin paragrapghs() {
   font-family: $primaryFont;
   font-weight: regular;
-  font-size: 1.1rem;
+  font-size: 1.5rem;
 }
 
 @mixin languageSwitchs() {
-    @include paragrapghs();
-    padding: 0rem 1rem;
-    border: solid 1px $primaryColor1;
-    border-radius: 50%;
+  font-family: $primaryFont;
+  font-weight: regular;
+  font-size: 1.1rem;
+  padding: 0rem 1rem;
+  border: solid 1px $primaryColor1;
+  border-radius: 50%;
 }

@@ -2,25 +2,23 @@
   display: flex;
   border-bottom: solid 1px;
   border-color: $secondaryColor2;
-  padding-bottom: 30px;
 }
 
 .column1 {
   width: 50%;
-  height: 500px;
-  background-image: url("./images/degradado.png");
+  height: auto;
+  //background-image: url("./images/degradado.png");
   background-repeat: no-repeat;
   background-position: center-left;
   background-size: cover;
   padding-top: 20px;
-  padding-bottom: 20px;
   img {
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
     width: auto;
-    height: 100%;
+    height: 90%;
   }
 }
 
@@ -31,27 +29,30 @@
     @include mainTitles();
     text-transform: uppercase;
     span {
-      font-weight: bold;
+      font-family: $secondaryFont;
+      font-weight: 100;
+      font-size: 4.5rem;
+      text-transform: none;
     }
   }
   .column2Item2 {
-    @include mainTitles();
+    @include mainTitles2();
     margin-left: 173px;
     margin-top: -35px;
-    color: $primaryColor1;
+    color: black;
   }
   .column2Item3 {
-    width: 20.7rem;
-    margin-left: 175px;
+    width: 28rem;
+    margin-left: 177px;
     p {
       @include paragrapghs();
     }
   }
   .column2Item4 {
     img {
-      height: 100px;
+      height: 150px;
       position: absolute;
-      margin-top: -10rem;
+      margin-top: -14rem;
       margin-left: -4rem;
     }
   }

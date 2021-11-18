@@ -1,29 +1,32 @@
-@import './variables';
-@import './mixins';
-@import './responsive';
+@import "./variables";
+@import "./mixins";
+@import "./responsive";
 
-@import './navBar';
-@import './section1';
+@import "./navBar";
+@import "./section1";
+@import "./animaciones";
 
 @font-face {
-  font-family: 
-  'oggg regular';
-  src: url('/fonts/OGG\ ROMAN.OTF') format('opentype');
+  font-family: 'ogg regular';
+  src: url("../fonts/OGG\ ROMAN.OTF") format("opentype");
 }
 
 @font-face {
   font-family: 'ogg italic';
-  src: url('/fonts/OGG\ ITALIC.OTF');
+  src: url("../fonts/OGG\ ITALIC.OTF") format("opentype");
 }
 
 body {
-    background-color: #efe8d7;
-    margin: 0px 6rem;
+  background-color: #efe8d7;
+  margin: 0px 6rem;
+  background-image: url("./images/degradado.png");
+  background-repeat: no-repeat;
+  background-position: center-left;
+  background-size: cover;
+}
+
+@include mobile {
+  body {
+    margin: 0px 1.5rem;
   }
-
-  @include mobile {
-    body {
-        margin: 0px 1.5rem;
-      }
-
-  } 
+}

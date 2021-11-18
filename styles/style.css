@@ -97,18 +97,15 @@
   display: flex;
   border-bottom: solid 1px;
   border-color: #333333;
-  padding-bottom: 30px;
 }
 
 .column1 {
   width: 50%;
-  height: 500px;
-  background-image: url("./images/degradado.png");
+  height: auto;
   background-repeat: no-repeat;
   background-position: center-left;
   background-size: cover;
   padding-top: 20px;
-  padding-bottom: 20px;
 }
 
 .column1 img {
@@ -117,7 +114,7 @@
   margin-right: auto;
   margin-top: 20px;
   width: auto;
-  height: 100%;
+  height: 90%;
 }
 
 .column2 {
@@ -128,40 +125,42 @@
 .column2 .column2Item1 {
   font-family: "Syne", sans-serif;
   font-weight: 900;
-  font-size: 3rem;
+  font-size: 3.5rem;
   text-transform: uppercase;
   text-transform: uppercase;
 }
 
 .column2 .column2Item1 span {
-  font-weight: bold;
+  font-family: "ogg italic";
+  font-weight: 100;
+  font-size: 4.5rem;
+  text-transform: none;
 }
 
 .column2 .column2Item2 {
-  font-family: "Syne", sans-serif;
-  font-weight: 900;
-  font-size: 3rem;
-  text-transform: uppercase;
+  font-family: "ogg italic";
+  font-weight: 100;
+  font-size: 4.5rem;
   margin-left: 173px;
   margin-top: -35px;
-  color: #b892ff;
+  color: black;
 }
 
 .column2 .column2Item3 {
-  width: 20.7rem;
-  margin-left: 175px;
+  width: 28rem;
+  margin-left: 177px;
 }
 
 .column2 .column2Item3 p {
   font-family: "Syne", sans-serif;
   font-weight: regular;
-  font-size: 1.1rem;
+  font-size: 1.5rem;
 }
 
 .column2 .column2Item4 img {
-  height: 100px;
+  height: 150px;
   position: absolute;
-  margin-top: -10rem;
+  margin-top: -14rem;
   margin-left: -4rem;
 }
 
@@ -232,18 +231,22 @@
 }
 
 @font-face {
-  font-family: 'oggg regular';
-  src: url("/fonts/OGG ROMAN.OTF") format("opentype");
+  font-family: 'ogg regular';
+  src: url("../fonts/OGG ROMAN.OTF") format("opentype");
 }
 
 @font-face {
   font-family: 'ogg italic';
-  src: url("/fonts/OGG ITALIC.OTF");
+  src: url("../fonts/OGG ITALIC.OTF") format("opentype");
 }
 
 body {
   background-color: #efe8d7;
   margin: 0px 6rem;
+  background-image: url("./images/degradado.png");
+  background-repeat: no-repeat;
+  background-position: center-left;
+  background-size: cover;
 }
 
 @media (max-width: 420px) {
