@@ -1,77 +1,76 @@
 /**********Small laptop 1200-1390px***********/
 /**********Mobile 420px***********/
-.menu-fixed {
-  width: 100vw;
-  opacity: 1;
-  position: fixed;
-  left: 0;
-  top: 0;
-}
-
-.menu-fixed .menu-holder {
-  height: 60px;
-  border-bottom: solid 1px;
-  border-color: #333333;
+nav {
+  background: transparent;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-bottom: solid 1px;
+}
+
+.navMenu {
+  font-family: "Syne", sans-serif;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
-.menu-fixed .menu-holder img {
-  height: 20px;
-  margin-left: 2rem;
+.navMenu a {
+  color: black;
+  text-decoration: none;
 }
 
-.menu-fixed .menu-holder .menu-portfolio {
-  font-family: "Syne", sans-serif;
-  font-weight: bold;
-  font-size: 1.2rem;
+.navMenu ahover {
+  text-decoration: underline;
 }
 
-.menu-fixed .menu-holder .menu-left {
+.navMenu .menu-right {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.menu-fixed .menu-holder .menu-left .item-language1 {
-  font-family: "Syne", sans-serif;
-  font-weight: regular;
-  font-size: 1.1rem;
-  padding: 0rem 1rem;
-  border: solid 1px #b892ff;
-  border-radius: 50%;
-  border-color: transparent;
+.navMenu .menu-right .menu-right1 {
+  margin-right: 20px;
 }
 
-.menu-fixed .menu-holder .menu-left .item-language2 {
-  font-family: "Syne", sans-serif;
-  font-weight: regular;
-  font-size: 1.1rem;
-  padding: 0rem 1rem;
-  border: solid 1px #b892ff;
-  border-radius: 50%;
+.navMenu .menu-right .menu-right1 ul {
+  list-style-type: none;
 }
 
-.menu-fixed .menu-holder .menu-left .menu-switch {
-  width: 16px;
-  height: 16px;
-  background-color: #333333;
-  border: solid;
-  border-color: #333333;
-  border-radius: 50%;
-  margin-left: 1rem;
-  margin-right: 2rem;
+.navMenu .menu-right .menu-right1 ul li {
+  font-size: 16px;
+  padding: 15px 5px;
+  white-space: nowrap;
 }
 
 /**********Responsive laptop 1200-1390px***********/
@@ -191,7 +190,6 @@
   }
   .section1 .column2 {
     width: 100%;
-    background-image: url("./images/degradado.png");
     margin-top: 0px;
   }
   .section1 .column2 .column2Item1 {
