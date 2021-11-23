@@ -66,6 +66,8 @@
 @include mobile {
   .section1 {
     flex-direction: column-reverse;
+    align-content: center;
+    padding-top: 1.5rem;
     .column1 {
       width: 100%;
       background-image: none;
@@ -79,11 +81,14 @@
       width: 100%;
       margin-top: 0px;
       .column2Item1 {
-        font-size: $mobile-mainTitles-fontSize;
+        font-size: $mobile-mainTitles1-fontSize;
+        span {
+          font-size: $mobile-mainTitles1-fontSize;
+        }
       }
 
       .column2Item2 {
-        font-size: $mobile-mainTitles-fontSize;
+        font-size: $mobile-mainTitles1-fontSize;
         margin-left: 85px;
         margin-top: -18px;
       }
@@ -92,6 +97,14 @@
         margin-left: 85px;
         p {
           font-size: $mobile-paragrapghs-fontSize;
+        }
+      }
+      .column2Item4 {
+        img {
+          height: 140px;
+          position: absolute;
+          margin-top: -10rem;
+          margin-left: -6rem;
         }
       }
     }

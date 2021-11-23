@@ -1,5 +1,3 @@
-
-
 nav {
   background: transparent;
   display: flex;
@@ -22,6 +20,16 @@ nav {
       text-decoration: underline;
     }
   }
+  .menu-left {
+    font-family: $primaryFont;
+    font-weight: normal;
+    font-size: 1.2rem;
+  }
+  .menu-center {
+    font-family: $primaryFont;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
   .menu-right {
     box-sizing: border-box;
     display: flex;
@@ -42,24 +50,26 @@ nav {
   }
 }
 
-
-
-
-
-
+.item-language1 {
+  @include languageSwitchs();
+  border-color: transparent;
+}
+.item-language2 {
+  @include languageSwitchs();
+}
 
 /**********Responsive laptop 1200-1390px***********/
 
 @include smallLaptop {
   .menu-fixed {
-    .menu-holder {
+    .navMenu {
       img {
         height: 16px;
       }
-      .menu-portfolio{
+      .menu-center {
         font-size: $smallLaptop-paragrapghs-fontSize;
       }
-      .menu-left {
+      .menu-right1 {
         .item-language1 {
           font-size: $smallLaptop-paragrapghs-fontSize;
         }
@@ -78,5 +88,24 @@ nav {
 
 /*****Responsive Movil 375px*****/
 @include mobile {
+  .navMenu {
+    .menu-left {
+      font-size: 1.2rem;
+    }
 
+   .menu-center {
+    font-size: 1rem;
+    position: absolute;
+    visibility: hidden;
+   }
+   .menu-right1 {
+    margin-right: 10px;
+    .item-language1 {
+      @include languageSwitchsMobile();
+    }
+    .item-language2 {
+      @include languageSwitchsMobile();
+    }
+  }
+ }
 }

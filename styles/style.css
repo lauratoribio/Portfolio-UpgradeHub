@@ -41,6 +41,18 @@ nav {
   text-decoration: underline;
 }
 
+.navMenu .menu-left {
+  font-family: "Syne", sans-serif;
+  font-weight: normal;
+  font-size: 1.2rem;
+}
+
+.navMenu .menu-center {
+  font-family: "Syne", sans-serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
 .navMenu .menu-right {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -73,21 +85,40 @@ nav {
   white-space: nowrap;
 }
 
+.item-language1 {
+  font-family: "Syne", sans-serif;
+  font-weight: regular;
+  font-size: 1.1rem;
+  padding: 0rem 1rem;
+  border: solid 1px #b892ff;
+  border-radius: 50%;
+  border-color: transparent;
+}
+
+.item-language2 {
+  font-family: "Syne", sans-serif;
+  font-weight: regular;
+  font-size: 1.1rem;
+  padding: 0rem 1rem;
+  border: solid 1px #b892ff;
+  border-radius: 50%;
+}
+
 /**********Responsive laptop 1200-1390px***********/
 @media (min-width: 1200px) and (max-width: 1390px) {
-  .menu-fixed .menu-holder img {
+  .menu-fixed .navMenu img {
     height: 16px;
   }
-  .menu-fixed .menu-holder .menu-portfolio {
+  .menu-fixed .navMenu .menu-center {
     font-size: 1.2rem;
   }
-  .menu-fixed .menu-holder .menu-left .item-language1 {
+  .menu-fixed .navMenu .menu-right1 .item-language1 {
     font-size: 1.2rem;
   }
-  .menu-fixed .menu-holder .menu-left .item-language2 {
+  .menu-fixed .navMenu .menu-right1 .item-language2 {
     font-size: 1.2rem;
   }
-  .menu-fixed .menu-holder .menu-left .menu-switch {
+  .menu-fixed .navMenu .menu-right1 .menu-switch {
     width: 12px;
     height: 12px;
     padding: 0px 0px;
@@ -95,6 +126,36 @@ nav {
 }
 
 /*****Responsive Movil 375px*****/
+@media (max-width: 420px) {
+  .navMenu .menu-left {
+    font-size: 1.2rem;
+  }
+  .navMenu .menu-center {
+    font-size: 1rem;
+    position: absolute;
+    visibility: hidden;
+  }
+  .navMenu .menu-right1 {
+    margin-right: 10px;
+  }
+  .navMenu .menu-right1 .item-language1 {
+    font-family: "Syne", sans-serif;
+    font-weight: regular;
+    font-size: 1.1rem;
+    padding: 0rem 0.5rem;
+    border: solid 1px #b892ff;
+    border-radius: 50%;
+  }
+  .navMenu .menu-right1 .item-language2 {
+    font-family: "Syne", sans-serif;
+    font-weight: regular;
+    font-size: 1.1rem;
+    padding: 0rem 0.5rem;
+    border: solid 1px #b892ff;
+    border-radius: 50%;
+  }
+}
+
 .section1 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -178,6 +239,9 @@ nav {
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    padding-top: 1.5rem;
   }
   .section1 .column1 {
     width: 100%;
@@ -193,10 +257,13 @@ nav {
     margin-top: 0px;
   }
   .section1 .column2 .column2Item1 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+  }
+  .section1 .column2 .column2Item1 span {
+    font-size: 1.8rem;
   }
   .section1 .column2 .column2Item2 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     margin-left: 85px;
     margin-top: -18px;
   }
@@ -206,6 +273,12 @@ nav {
   }
   .section1 .column2 .column2Item3 p {
     font-size: 0.75rem;
+  }
+  .section1 .column2 .column2Item4 img {
+    height: 140px;
+    position: absolute;
+    margin-top: -10rem;
+    margin-left: -6rem;
   }
 }
 
