@@ -30,3 +30,10 @@ body {
     margin: 0px 1.5rem;
   }
 }
+
+@include smallLaptop {
+  body {
+    margin: 0px 2.5rem;
+  }
+
+}

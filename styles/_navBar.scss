@@ -1,6 +1,9 @@
 .menu-fixed {
-  width: 100%;
+  width: 100vw;
   opacity: 1;
+  position: fixed;
+  left: 0;
+  top: 0;
   .menu-holder {
     height: 60px;
     border-bottom: solid 1px;
@@ -8,6 +11,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
    
     img {
       height: 20px;
@@ -42,7 +46,7 @@
   }
 }
 
-/**********Responsive movil 1200-1390px***********/
+/**********Responsive laptop 1200-1390px***********/
 
 @include smallLaptop {
   .menu-fixed {
@@ -68,4 +72,9 @@
       }
     }
   }
+}
+
+/*****Responsive Movil 375px*****/
+@include mobile {
+  
 }
