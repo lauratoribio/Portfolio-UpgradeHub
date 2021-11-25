@@ -18,22 +18,9 @@
 
 body {
   background-color: #efe8d7;
-  margin: 0px 6rem;
   background-image: url("./images/degradado.png");
   background-repeat: no-repeat;
   background-position: center-left;
   background-size: cover;
 }
 
-@include mobile {
-  body {
-    margin: 0px 1.5rem;
-  }
-}
-
-@include smallLaptop {
-  body {
-    margin: 0px 2.5rem;
-  }
-
-}
