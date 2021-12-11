@@ -5,6 +5,7 @@
 @import "./navBar";
 @import "./section1";
 @import "./animaciones";
+@import "./mainSection";
 
 @font-face {
   font-family: 'ogg regular';
@@ -16,11 +17,22 @@
   src: url("../fonts/OGG\ ITALIC.OTF") format("opentype");
 }
 
+
+* {
+  margin: 0;
+  padding: 0;
+  box-shadow: border-box;
+}
+
+
 body {
   background-color: #efe8d7;
   background-image: url("./images/degradado.png");
   background-repeat: no-repeat;
   background-position: center-left;
   background-size: cover;
+  font-family: $primaryFont;
+  color: $black;
+  overflow-x: hidden;
 }
 

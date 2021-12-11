@@ -1,3 +1,20 @@
+@mixin center() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin mainTitles() {
+  font-family: $primaryFont;
+  font-weight: 900;
+}
+
+@mixin secondaryTitles() {   
+  font-family: $secondaryFont;
+ font-weight: 100;
+}
+
+
 @mixin mainTitles() {
   font-family: $primaryFont;
   font-weight: 900;

@@ -2,8 +2,8 @@
   display: flex;
   border-color: $secondaryColor2;
   align-items: center;
-  padding-top: 4.5rem;
   padding-bottom: 2rem;
+  margin: 0 auto;
   .column1 {
     width: 50%;
     height: auto;
@@ -18,7 +18,7 @@
       margin-right: auto;
       margin-top: 20px;
       width: auto;
-      height: 90%;
+      height: 80%;
     }
   }
 
@@ -50,10 +50,10 @@
     }
     .column2Item4 {
       img {
-        height: 150px;
+        height: 100px;
         position: absolute;
         margin-top: -14rem;
-        margin-left: -4rem;
+        margin-left: -1rem;
       }
     }
   }
@@ -117,7 +117,7 @@
     .column1 {
       height: auto;
       img {
-        width: 90%;
+        width: 80%;
         height: auto;
       }
     }
